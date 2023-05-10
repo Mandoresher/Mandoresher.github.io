@@ -1,0 +1,46 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+main {
+  display: inline;
+  
+}
+
+.main__image {
+  width: 30vw;
+  height: 50%;
+  position: absolute;
+}
+
+/* .main__image:not(.main__image1) {
+  position: absolute;
+  transform:translate(50%);
+} */
+.main__image1 {
+  z-index: 5;
+}
+
+.main__image2 {
+  transform: translate(50%);
+  z-index: 4;
+}
+
+.main__image3 {
+  transform: translate(100%);
+  z-index: 3;
+}
+
+.main__image4 {
+  transform: translate(150%);
+  z-index: 2;
+}
+
+.main__image5 {
+  transform: translate(200%);
+  z-index: 1;
+}
+
+.main__image:hover {
+  z-index: 1000;
+}
