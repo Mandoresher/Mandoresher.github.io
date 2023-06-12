@@ -38,6 +38,7 @@ body {
   font-style: normal;
   scroll-behavior: smooth;
   color: #333333;
+  overflow-x: hidden;
 }
 
 .main {
