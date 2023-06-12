@@ -370,6 +370,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #2963A3;
+  white-space: nowrap;
 }
 
 .main__breakline_2 {
