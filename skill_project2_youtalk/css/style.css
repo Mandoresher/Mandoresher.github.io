@@ -58,7 +58,7 @@ body {
   min-height: 76px;
   white-space: nowrap;
   justify-content: space-between;
-  gap: 16px;
+  gap: 10px;
   padding: 0 8px;
 }
 
@@ -67,14 +67,12 @@ body {
 }
 
 .header__logo {
-  margin-right: 51px;
   margin-top: 2px;
 }
 
 .header__btn {
   padding: 14px 20px;
   margin-right: 0;
-  margin-left: 114px;
   width: 230px;
   text-align: center;
   border-radius: 4px;
@@ -111,7 +109,7 @@ body {
   letter-spacing: 0.25px;
   line-height: 114%;
   position: relative;
-  margin-right: 30px;
+  margin-right: 2vw;
   margin-top: 1px;
   color: #333333;
 }
