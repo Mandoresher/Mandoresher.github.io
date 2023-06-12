@@ -49,6 +49,8 @@ body {
   min-height: 76px;
   white-space: nowrap;
   justify-content: space-between;
+  gap: 16px;
+  padding: 0 8px;
 }
 
 .header__burger {
@@ -1099,11 +1101,7 @@ body {
     background-color: #FFFFFF;
   }
 
-  .menu__list {
-    display: none;
-  }
-
-  .header__btn {
+  .menu__list, .header__btn {
     display: none;
   }
 
