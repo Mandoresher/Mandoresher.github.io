@@ -404,6 +404,10 @@ body {
   color: #36363667;
 }
 
+.section3__input:focus::placeholder {
+  color: transparent;
+}
+
 .field__description {
   display: flex;
   flex-direction: column;
