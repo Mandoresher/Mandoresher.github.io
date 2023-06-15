@@ -106,7 +106,7 @@ body {
   color: #FFFFFF;
 }
 
-section[class^=section] {
+.section {
   width: 100vw;
 }
 
@@ -375,6 +375,11 @@ section[class^=section] {
   transition: all 0.3s ease-in-out;
 }
 
+.section3__btn-text {
+  font-size: 13px;
+  line-height: 27px;
+}
+
 .section3__btn:hover {
   background: #be8e41;
   border: none;
@@ -388,6 +393,7 @@ section[class^=section] {
 .section3__input {
   width: 230px;
   height: 26px;
+  padding: 5px;
   border-bottom: 1px solid #3636364D;
 }
 
@@ -395,7 +401,7 @@ section[class^=section] {
   font-size: 14px;
   line-height: 23px;
 
-  color: #363636;
+  color: #36363667;
 }
 
 .field__description {
@@ -465,5 +471,74 @@ section[class^=section] {
 
 .section_4 {
   background-color: white;
-  height: 1851px;
+  height: 830px;
 }
+
+.section4__image {
+  width: 392px;
+  height: 421px;
+}
+
+.section4__services-box {
+  display: flex;
+  gap: 30px;
+  margin-top: 31px;
+}
+
+.section4__image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  position: relative;
+  width: 330px;
+  height: 286px;
+  background-color: white;
+  top: -127px;
+  padding: 25px 31px;
+}
+
+.service__title {
+  font-size: 18px;
+  line-height: 25px;
+  color: #363636;
+}
+
+.service__item {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 27px;
+  color: #959595;
+}
+
+.price {
+  position: relative;
+  left: -31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 228px;
+  height: 54px;
+  padding: 18px;
+
+  background: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+
+.price-title {
+  font-size: 18px;
+  line-height: 25px;
+  white-space: nowrap;
+}
+
+.section_5 {
+  height: 967px;
+  background-color: white;
+}
+
