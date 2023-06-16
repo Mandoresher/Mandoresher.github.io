@@ -114,6 +114,7 @@ body {
   position: relative;
   background-image: url(../img/section_1-img.png);
   background-size: 100vw 707px;
+  background-repeat: no-repeat;
   height: 707px;
 }
 
@@ -175,7 +176,7 @@ body {
 }
 
 .section_2 {
-  height: 1074px;
+  min-height: 1074px;
 }
 
 .section2__title2 {
@@ -220,6 +221,7 @@ body {
 .section2__subcontainer {
   display: flex;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .section2__text-container {
@@ -272,7 +274,7 @@ body {
 
 .section_3 {
   width: 100vw;
-  height: 770px;
+  min-height: 770px;
   background-color: white;
   margin: 0 auto;
 }
@@ -475,7 +477,7 @@ body {
 
 .section_4 {
   background-color: white;
-  height: 830px;
+  min-height: 830px;
 }
 
 .section4__image {
@@ -487,6 +489,7 @@ body {
   display: flex;
   gap: 30px;
   margin-top: 31px;
+  flex-wrap: wrap;
 }
 
 .section4__image-box {
@@ -544,7 +547,7 @@ body {
 
 .section_5 {
   position: relative;
-  height: 967px;
+  min-height: 967px;
   background-color: white;
 }
 
