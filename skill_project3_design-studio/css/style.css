@@ -763,3 +763,42 @@ body {
 .subbox_2 {
   margin-top: -112px;
 }
+
+.section_7 {
+  min-height: 1107px;
+  background-color: white;
+}
+
+.section7__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section7__icon-title {
+  margin-top: 110px;
+}
+
+.section7__icon-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.section7__text {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #363636;
+}
+
+
+
+
+.section_8 {
+  min-height: 954px;
+}
