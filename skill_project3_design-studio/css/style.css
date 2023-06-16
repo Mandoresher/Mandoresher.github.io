@@ -274,7 +274,7 @@ body {
 
 .section_3 {
   width: 100vw;
-  min-height: 770px;
+  height: 770px;
   background-color: white;
   margin: 0 auto;
 }
@@ -608,4 +608,58 @@ body {
   text-align: center;
 
   color: #FFFFFF;
+}
+
+.section5__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 98px;
+  background-color: #131313;
+  padding: 28px 49px;
+  height: 509px;
+  width: 506px;
+}
+
+.section5__submit-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.section_5>.section__container {
+  display: flex;
+  gap: 14.3vw;
+}
+
+.section_5 .checkbox__text {
+  margin-top: 16px;
+  color: white;
+}
+
+.section5__btn {
+  align-self: end;
+  margin-top: 39px;
+}
+
+.section5__field-description {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.section5__input::placeholder {
+  color: white;
+}
+
+.section5__input {
+  width: 100%;
+  background: #131313;
+  padding: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  caret-color: white;
+}
+
+.section__fieldset-title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 39px;
 }
