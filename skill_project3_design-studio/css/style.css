@@ -238,6 +238,7 @@ body {
 .main__slider {
   height: 13.27px;
   width: 205.68px;
+  cursor: pointer;
 }
 
 .online-control {
