@@ -223,7 +223,7 @@ body {
   align-items: center;
   padding: 6px 8px;
   gap: 4px;
-  border: 1px solid #C1C5CD;
+  outline: 1px solid #C1C5CD;
   border-radius: 24px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -237,8 +237,7 @@ body {
 
 .filters__link:hover {
   background: #F9FDFD;
-  border: 2px solid #16C8BB;
-  margin-bottom: 2px;
+  outline: 2px solid #16C8BB;
   transition: all 0.1s ease-in;
 }
 
@@ -273,36 +272,33 @@ body {
   gap: 4px;
   padding: 6px 8px;
 
-  width: 67px;
+  width: fit-content;
+  max-width: calc(100% - 16px);
   height: 32px;
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid #C1C5CD;
   border-radius: 24px;
+}
 
+.article__filter-text {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.article_filter_1 {
+.article_filter_self,
+.article__filter_nutrition-psychology {
   top: 47px;
-  width: 67px;
-  height: 32px;
 }
 
-.article__filter_2 {
-  width: 261px;
-  height: 32px;
+.article__filter_self-esteem {
   top: 7px;
-  white-space: wrap;
-}
-
-.article__filter_3 {
-  top: 47px;
-  width: 197px;
-  height: 32px;
 }
 
 .article__image {
