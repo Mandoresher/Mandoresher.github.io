@@ -4,20 +4,14 @@ html,
 body {
   height: 100%;
   font-family: 'Nunito Sans', sans-serif;
-  font-style: normal;
   scroll-behavior: smooth;
   color: white;
   overflow-x: hidden;
   background-color: #131313;
 }
 
-.flex {
-  display: flex;
-}
-
 .wrapper {
   min-height: 100%;
-  flex-direction: column;
 }
 
 .main {
@@ -39,9 +33,7 @@ body {
 .header-footer__wrapper {
   margin: 0 auto;
   justify-content: space-between;
-  align-items: center;
 
-  text-transform: uppercase;
   font-size: 11px;
   line-height: 15px;
   white-space: nowrap;
@@ -56,7 +48,6 @@ body {
 
 .header-footer__tel {
   text-decoration-line: underline;
-  color: #E3B873;
 }
 
 .header-footer__tel:hover {
@@ -64,17 +55,12 @@ body {
 }
 
 .header-footer__tel-btn {
-  align-items: center;
   gap: 45px;
-}
-
-.header-footer__company-text {
-  color: #E3B873;
 }
 
 .header-footer__link,
 .header-footer__link:visited {
-  color: #FFFFFF;
+  color: white;
   transition: all 0.2s ease-in-out;
 }
 
@@ -84,14 +70,14 @@ body {
 }
 
 .btn {
-  background: #E3B873;
+  background-color: #E3B873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
   transition: all 0.5s ease-in-out;
 }
 
 .btn:hover {
-  background: transparent;
+  background-color: transparent;
   border: 1px solid white;
 }
 
@@ -106,8 +92,7 @@ body {
   font-size: 11px;
   line-height: 15px;
   text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
+  color: white;
 }
 
 .section {
@@ -134,10 +119,6 @@ body {
   font-family: 'Yeseva One';
   text-transform: uppercase;
   font-weight: 400;
-}
-
-.title_orange {
-  color: #E3B873;
 }
 
 .turnkey-repair__title {
@@ -168,7 +149,6 @@ body {
 
 .turnkey-repair__subcontainer {
   max-width: 520px;
-  flex-direction: column;
   gap: 38px;
 }
 
@@ -184,13 +164,11 @@ body {
   font-size: 27px;
   line-height: 37px;
   letter-spacing: -0.07em;
-  color: #E3B873;
 }
 
 .completed-projects__title_h3 {
   font-size: 18px;
   line-height: 25px;
-  color: #E3B873;
   white-space: nowrap;
 }
 
@@ -211,14 +189,12 @@ body {
 }
 
 .completed-projects__text-container {
-  flex-direction: column;
   justify-content: space-between;
   margin-top: 158px;
   max-width: 442px;
 }
 
 .completed-projects__title-text-container_h2 {
-  flex-direction: column;
   gap: 34px;
 }
 
@@ -229,7 +205,6 @@ body {
 }
 
 .completed-projects__title-text-container {
-  flex-direction: column;
   gap: 9px;
 }
 
@@ -238,7 +213,6 @@ body {
 }
 
 .completed-projects__list-img-box {
-  flex-direction: column;
   gap: 45.36px;
   margin-top: 107px;
 }
@@ -247,7 +221,6 @@ body {
   font-family: 'Yeseva One';
   font-size: 14px;
   line-height: 19px;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
   transition: color 0.3s ease-in-out;
 }
@@ -276,9 +249,6 @@ body {
 
 .online-control__container {
   position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 35px;
   top: -324px;
 }
@@ -307,14 +277,11 @@ body {
 }
 
 .online-control__icon-play-box {
-  align-items: center;
-  justify-content: center;
   width: 85px;
   height: 85px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
   position: absolute;
   background-color: #E3B873;
   z-index: 3;
@@ -340,22 +307,13 @@ body {
 }
 
 .icon-text-container {
-  flex-direction: column;
   gap: 15px;
-  align-items: center;
-  justify-content: center;
 }
 
 .icon-title {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-}
-
-.online-control__form {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .online-control__btn {
@@ -365,11 +323,11 @@ body {
 }
 
 .online-control__btn:hover {
-  background: #be8e41;
+  background-color: #be8e41;
 }
 
 .online-control__btn:active {
-  background: #a06c18;
+  background-color: #a06c18;
 }
 
 .btn-text_with-additional-styles {
@@ -395,7 +353,6 @@ body {
 }
 
 .field__description {
-  flex-direction: column;
   font-family: 'Nunito Sans';
   font-size: 13px;
   line-height: 21px;
@@ -435,13 +392,13 @@ body {
   flex-shrink: 0;
   flex-grow: 0;
   margin-right: 0.5em;
-  background: #E3B873;
+  background-color: #E3B873;
   border-radius: 1px;
 }
 
 .checkbox-input:checked+label::before {
   content: '';
-  background: #E3B873;
+  background-color: #E3B873;
   background-image: url(../img/checkbox-icon.svg);
   background-size: 75% 75%;
   background-position: center;
@@ -460,14 +417,7 @@ body {
 .types-of-repair__services-box {
   gap: 30px;
   margin-top: 31px;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-}
-
-.types-of-repair__image-box {
-  flex-direction: column;
-  align-items: center;
 }
 
 .types-of-repair__image {
@@ -476,7 +426,6 @@ body {
 }
 
 .service {
-  flex-direction: column;
   gap: 13px;
   position: relative;
   width: 330px;
@@ -511,12 +460,10 @@ body {
 .price {
   position: relative;
   left: -31px;
-  align-items: center;
-  justify-content: center;
   width: 228px;
   height: 54px;
   padding: 18px;
-  background: #E3B873;
+  background-color: #E3B873;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
 
@@ -547,23 +494,17 @@ body {
 .call-the-measurer__list-container {
   padding-top: 98px;
   margin-left: 120px;
-  flex-direction: column;
   gap: 105px;
 }
 
 .call-the-measurer__list-item-container {
   gap: 8px;
-  align-items: center;
 }
 
 .call-the-measurer__list-icon {
-  justify-content: center;
-  align-items: center;
+  min-width: 50px;
   height: 50px;
-  width: 50px;
-
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
-  border-radius: 30px;
   background-color: #E3B873;
   border: 8px solid white;
 }
@@ -583,11 +524,10 @@ body {
   font-size: 16px;
   line-height: 25px;
   text-align: center;
-  color: #FFFFFF;
+  color: white;
 }
 
 .dark-form {
-  flex-direction: column;
   margin-top: 98px;
   background-color: #131313;
   padding: 28px 49px;
@@ -603,7 +543,6 @@ body {
 }
 
 .submit-fields_dark {
-  flex-direction: column;
   gap: 48px;
 }
 
@@ -622,7 +561,7 @@ body {
 
 .input_dark-theme {
   width: 100%;
-  background: #131313;
+  background-color: #131313;
   padding: 5px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   caret-color: white;
@@ -643,13 +582,11 @@ body {
   border: none;
   width: 72px;
   height: 72px;
-  border-radius: 50%;
 }
 
 .call-the-measurer__text_pig {
   font-size: 18px;
   line-height: 26px;
-  color: #E3B873;
   text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
 
@@ -664,7 +601,6 @@ body {
   max-height: 864px;
   background-image: url(../img/section_6-img.png);
   background-size: 100% 100%;
-
 }
 
 .styles-of-repair::before {
@@ -689,12 +625,10 @@ body {
   font-weight: 400;
   font-size: 27px;
   line-height: 37px;
-  color: #E3B873;
   margin-bottom: 47px;
 }
 
 .styles-of-repair__list {
-  flex-direction: column;
   gap: 15px;
 }
 
@@ -702,7 +636,7 @@ body {
   font-family: 'Nunito Sans';
   font-size: 20px;
   line-height: 38px;
-  color: #FFFFFF;
+  color: white;
   transition: all 0.2s ease-in-out;
 }
 
@@ -716,7 +650,6 @@ body {
 }
 
 .styles-of-repair__image-subbox {
-  flex-direction: column;
   gap: 39px;
 }
 
@@ -760,16 +693,7 @@ body {
   background-size: cover;
 }
 
-.our-clients__container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .our-clients__icon-title-container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 15px;
 }
 
@@ -787,7 +711,6 @@ body {
 }
 
 .clients-container {
-  justify-content: center;
   gap: 54px;
   flex-wrap: wrap;
 }
@@ -797,20 +720,17 @@ body {
   height: 455px;
   width: 376px;
   padding: 24px 20px;
-  flex-direction: column;
   gap: 18px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
 
 .client__name-photo {
-  align-items: center;
   gap: 23px;
 }
 
 .client__photo {
   width: 76px;
   height: 76px;
-  border-radius: 50%;
 }
 
 .client__name {
@@ -842,8 +762,6 @@ body {
 .client__size,
 .client__time {
   gap: 15.39px;
-  justify-content: center;
-  align-items: center;
 }
 
 .client__size {
@@ -859,8 +777,7 @@ body {
   font-family: 'Yeseva One';
   font-size: 17px;
   line-height: 24px;
-  text-transform: uppercase;
-  color: #FFFFFF;
+  color: white;
 }
 
 .contacts-section {
@@ -878,15 +795,7 @@ body {
   background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
 }
 
-.contacts-section__container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .contacts-section__form {
-  flex-direction: column;
-  align-items: center;
   margin-top: -222px;
   width: 883px;
   height: 445px;
@@ -952,4 +861,32 @@ body {
   height: 465px;
   width: 925px;
   filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.beige {
+  color: #E3B873;
 }
