@@ -11,9 +11,12 @@ body {
   background-color: #131313;
 }
 
+.flex {
+  display: flex;
+}
+
 .wrapper {
   min-height: 100%;
-  display: flex;
   flex-direction: column;
 }
 
@@ -35,7 +38,6 @@ body {
 
 .header-footer__wrapper {
   margin: 0 auto;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 
@@ -49,7 +51,6 @@ body {
 }
 
 .header-footer__list {
-  display: flex;
   gap: 47.09px;
 }
 
@@ -63,7 +64,6 @@ body {
 }
 
 .header-footer__tel-btn {
-  display: flex;
   align-items: center;
   gap: 45px;
 }
@@ -416,7 +416,6 @@ body {
 }
 
 .field__description {
-  display: flex;
   flex-direction: column;
   font-family: 'Nunito Sans';
   font-style: normal;
@@ -506,7 +505,6 @@ body {
 }
 
 .service {
-  display: flex;
   flex-direction: column;
   gap: 13px;
   position: relative;
@@ -524,7 +522,14 @@ body {
   color: #363636;
 }
 
+@counter-style service-symbols {
+  system: cyclic;
+  symbols: "•";
+  suffix: " ";
+}
+
 .service__item {
+  list-style: service-symbols;
   font-family: 'Nunito Sans';
   font-weight: 400;
   font-size: 13px;
@@ -535,7 +540,6 @@ body {
 .price {
   position: relative;
   left: -31px;
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 228px;
@@ -846,7 +850,6 @@ body {
 }
 
 .client__name-photo {
-  display: flex;
   align-items: center;
   gap: 23px;
 }
@@ -885,7 +888,6 @@ body {
 
 .client__size,
 .client__time {
-  display: flex;
   gap: 15.39px;
   justify-content: center;
   align-items: center;
@@ -986,7 +988,6 @@ body {
 
 .contacts {
   margin-top: 26px;
-  display: flex;
   gap: 15px;
 }
 
