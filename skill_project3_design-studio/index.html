@@ -16,7 +16,7 @@
 
 <body>
   <div class="wrapper flex column">
-    <header class="header">
+    <header class="header back-black">
       <div class="header-footer__wrapper flex align-center uppercase">
         <div class="header-footer__company">
           <span class="header-footer__company-text beige">IC "Repair Design Project"</span>
@@ -42,67 +42,74 @@
 
 
     <main class="main">
-      <div class="main__wrapper">
-        <section class="section turnkey-repair">
-          <div class="section__container turnkey-repair__container">
-            <div class="turnkey-repair__subcontainer flex column">
-              <h1 class="title turnkey-repair__title">Turnkey Repair in the city of <span
-                  class="beige">Rostov-on-Don</span></h1>
-              <p class="main__text">Get ready-made turnkey repairs on time
-                with work time saving up to 45 days and 20% from
-                cost of materials due to the organization of work</p>
-              <div class="turnkey-repair__btn-container flex">
-                <button class="btn turnkey-repair__btn"><span class="btn-text uppercase">Calculate the cost</span></button>
-                <button class="btn turnkey-repair__btn"><span class="btn-text uppercase">Submit your
-                    application</span></button>
+      <div class="main__wrapper flex column">
+        <div class="turnkey-completed-wrapper">
+          <section class="section turnkey-repair back-black">
+            <div class="section__container turnkey-repair__container">
+              <div class="turnkey-repair__subcontainer flex column">
+                <h1 class="title turnkey-repair__title">Turnkey Repair in the city of <span
+                    class="beige">Rostov-on-Don</span></h1>
+                <p class="main__text turnkey-repair__text">Get ready-made turnkey repairs on time
+                  with work time saving up to 45 days and 20% from
+                  cost of materials due to the organization of work</p>
+                <div class="turnkey-repair__btn-container flex">
+                  <button class="btn turnkey-repair__btn"><span class="btn-text uppercase">Calculate the
+                      cost</span></button>
+                  <button class="btn turnkey-repair__btn"><span class="btn-text uppercase">Submit your
+                      application</span></button>
+                </div>
               </div>
             </div>
-          </div>
 
-        </section>
-        <section class="section completed-projects">
-          <div class="section__container">
-            <div class="completed-projects__subcontainer flex">
-              <div class="completed-projects__text-container flex column">
-                <div class="completed-projects__title-text-container_h2 flex column">
-                  <h2 class="title completed-projects__title_h2 beige">Completed projects</h2>
-                  <p class="main__text completed-projects__basic-text">Only a small part of the work performed by our company is
-                    presented
-                    on the site. For 14 years on in the construction
-                    market we have made happy more than 1000 families</p>
+          </section>
+          <section class="section completed-projects back-black">
+            <div class="section__container">
+              <div class="completed-projects__subcontainer flex">
+                <div class="completed-projects__text-container flex column">
+                  <div class="completed-projects__title-text-container_h2 flex column">
+                    <h2 class="title completed-projects__title_h2 beige">Completed projects</h2>
+                    <p class="main__text completed-projects__basic-text">Only a small part of the work performed by our
+                      company is
+                      presented
+                      on the site. For 14 years on in the construction
+                      market we have made happy more than 1000 families</p>
+                  </div>
+                  <div class="completed-projects__text-subcontainer">
+                    <div class="completed-projects__title-text-container flex column">
+                      <h3 class="title completed-projects__title_h3 beige">City:</h3>
+                      <span class="main__text completed-projects__minor-text">Rostov-on-Don
+                        LCD admiral</span>
+                    </div>
+                    <div class="completed-projects__title-text-container flex column">
+                      <h3 class="title completed-projects__title_h3 beige">Apartment area:</h3>
+                      <span class="main__text completed-projects__minor-text">81 m2</span>
+                    </div>
+                    <div class="completed-projects__title-text-container flex column">
+                      <h3 class="title completed-projects__title_h3 beige">Repair time:</h3>
+                      <span class="main__text completed-projects__minor-text">3.5 months</span>
+                    </div>
+                    <div class="completed-projects__title-text-container flex column">
+                      <h3 class="title completed-projects__title_h3 beige">Repair Cost:</h3>
+                      <span class="main__text completed-projects__minor-text">Upon request</span>
+                    </div>
+                  </div>
+                  <img src="img/slider.svg" alt="" class="main__slider">
                 </div>
-                <div class="completed-projects__text-subcontainer">
-                  <div class="completed-projects__title-text-container flex column">
-                    <h3 class="title completed-projects__title_h3 beige">City:</h3>
-                    <span class="main__text completed-projects__minor-text">Rostov-on-Don
-                      LCD admiral</span>
-                  </div>
-                  <div class="completed-projects__title-text-container flex column">
-                    <h3 class="title completed-projects__title_h3 beige">Apartment area:</h3>
-                    <span class="main__text completed-projects__minor-text">81 m2</span>
-                  </div>
-                  <div class="completed-projects__title-text-container flex column">
-                    <h3 class="title completed-projects__title_h3 beige">Repair time:</h3>
-                    <span class="main__text completed-projects__minor-text">3.5 months</span>
-                  </div>
-                  <div class="completed-projects__title-text-container flex column">
-                    <h3 class="title completed-projects__title_h3 beige">Repair Cost:</h3>
-                    <span class="main__text completed-projects__minor-text">Upon request</span>
-                  </div>
+                <div class="completed-projects__list-img-box flex column">
+                  <ul class="completed-projects__list flex">
+                    <li class="completed-projects__item"><a href="#"
+                        class="completed-projects__link uppercase">Rostov-on-Don, Admiral</a></li>
+                    <li class="completed-projects__item"><a href="#" class="completed-projects__link uppercase">Sochi
+                        Thieves</a></li>
+                    <li class="completed-projects__item"><a href="#"
+                        class="completed-projects__link uppercase">Rostov-on-Don Patriotic</a></li>
+                  </ul>
+                  <img class="completed-projects__image" src="img/section_2-img.png" alt="Rostov-on-don admiral">
                 </div>
-                <img src="img/slider.svg" alt="" class="main__slider">
-              </div>
-              <div class="completed-projects__list-img-box flex column">
-                <ul class="completed-projects__list flex">
-                  <li class="completed-projects__item"><a href="#" class="completed-projects__link uppercase">Rostov-on-Don, Admiral</a></li>
-                  <li class="completed-projects__item"><a href="#" class="completed-projects__link uppercase">Sochi Thieves</a></li>
-                  <li class="completed-projects__item"><a href="#" class="completed-projects__link uppercase">Rostov-on-Don Patriotic</a></li>
-                </ul>
-                <img class="completed-projects__image" src="img/section_2-img.png" alt="Rostov-on-don admiral">
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         <section class="section online-control">
           <div class="section__container online-control__container flex column justify-center align-center">
@@ -121,11 +128,12 @@
               <img class="online-control__image" src="img/section_3-img.png" alt="Видео-пример ремонта">
             </div>
             <hr class="online-control__line">
-            <p class="main__text online-control__text">At each facility, a camera is installed that broadcasts the progress
+            <p class="main__text online-control__text">At each facility, a camera is installed that broadcasts the
+              progress
               of work on the clock. At any time, you can go to our website and monitor the progress of work in your
               apartment. You can watch the live broadcast from one of our facilities!
               Leave a request below and you will receive a link to the broadcast.</p>
-            <form class="flex column justify-center align-center">
+            <form class="online-control__form flex column justify-center align-center">
               <fieldset class="online-control__submit-fields flex">
                 <label class="field__description flex column">Name
                   <input class="main__input" type="text" placeholder="What is your name:">
@@ -133,11 +141,13 @@
                 <label class="field__description flex column">Phone
                   <input class="main__input" type="tel" placeholder="Your phone number:">
                 </label>
-                <button class="btn online-control__btn"><span class="btn-text btn-text_with-additional-styles uppercase">Submit</span></button>
+                <button class="btn online-control__btn"><span
+                    class="btn-text btn-text_with-additional-styles uppercase">Submit</span></button>
               </fieldset>
               <div class="checkbox__container">
                 <input class="checkbox-input" type="checkbox" id="online-control__checkbox">
-                <label for="online-control__checkbox" class="checkbox__text">I agree to the processing of personal data</label>
+                <label for="online-control__checkbox" class="checkbox__text">I agree to the processing of personal
+                  data</label>
               </div>
             </form>
           </div>
@@ -211,26 +221,28 @@
             </div>
           </div>
         </section>
-        
+
         <section class="section call-the-measurer">
           <div class="section__container call-the-measurer__container flex">
             <div class="call-the-measurer__list-container flex column">
               <div class="call-the-measurer__list-item-container flex align-center">
-                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span class="list-icon-text">01</span></div><span
-                  class="call-the-measurer__text">Our specialist will arrive for measurements per day
+                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span
+                    class="list-icon-text">01</span></div><span class="call-the-measurer__text">Our specialist will
+                  arrive for measurements per day
                   contact, or appoint a date convenient for you</span>
               </div>
               <div class="call-the-measurer__list-item-container flex align-center">
-                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span class="list-icon-text">02</span></div><span
-                  class="call-the-measurer__text">Free metering</span>
+                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span
+                    class="list-icon-text">02</span></div><span class="call-the-measurer__text">Free metering</span>
               </div>
               <div class="call-the-measurer__list-item-container flex align-center">
-                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span class="list-icon-text">03</span></div><span
-                  class="call-the-measurer__text">Free consultation</span>
+                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span
+                    class="list-icon-text">03</span></div><span class="call-the-measurer__text">Free consultation</span>
               </div>
               <div class="call-the-measurer__list-item-container flex align-center">
-                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span class="list-icon-text">04</span></div><span
-                  class="call-the-measurer__text">Get a cost estimate and<br>
+                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span
+                    class="list-icon-text">04</span></div><span class="call-the-measurer__text">Get a cost estimate
+                  and<br>
                   the timing of your future repairs</span>
               </div>
             </div>
@@ -250,16 +262,20 @@
               </fieldset>
               <div class="checkbox__container">
                 <input class="checkbox-input" type="checkbox" id="call-the-measurer__checkbox">
-                <label for="call-the-measurer__checkbox" class="checkbox__text checkbox__text_dark">I agree to the processing of personal
+                <label for="call-the-measurer__checkbox" class="checkbox__text checkbox__text_dark">I agree to the
+                  processing of personal
                   data</label>
               </div>
-              <button class="btn call-the-measurer__btn"><span class="btn-text btn-text_with-additional-styles uppercase">Call the
+              <button class="btn call-the-measurer__btn"><span
+                  class="btn-text btn-text_with-additional-styles uppercase">Call the
                   measurer</span></button>
             </form>
           </div>
           <div class="call-the-measurer__list-item-container pig flex align-center">
-            <div class="call-the-measurer__list-icon call-the-measurer__list-icon_pig flex circle justify-center align-center"><img class="section5__icon-pig"
-                src="img/section_5-pig-icon.svg" alt=""></div><span class="call-the-measurer__text call-the-measurer__text_pig beige">Help save
+            <div
+              class="call-the-measurer__list-icon call-the-measurer__list-icon_pig flex circle justify-center align-center">
+              <img class="section5__icon-pig" src="img/section_5-pig-icon.svg" alt=""></div><span
+              class="call-the-measurer__text call-the-measurer__text_pig beige">Help save
               10 - 20% of the<br>
               cost of materials</span>
           </div>
@@ -268,7 +284,7 @@
         <section class="section styles-of-repair">
           <div class="section__container styles-of-repair__container flex">
             <div class="styles-of-repair__text-container">
-              <h2 class="title styles-of-repair__title beige">We realize your
+              <h2 class="title styles-of-repair__title beige">We realize your<br>
                 wildest fantasies</h2>
               <ul class="styles-of-repair__list flex column">
                 <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">American classic</a></li>
@@ -278,16 +294,17 @@
                 <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Minimalism</a></li>
                 <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Provence</a></li>
                 <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Romanticism</a></li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Scandinavian style</a></li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Mediterranean style</a></li>
+                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Scandinavian style</a>
+                </li>
+                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Mediterranean style</a>
+                </li>
                 <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">High tech</a></li>
                 <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Eclecticism</a></li>
               </ul>
             </div>
             <div class="styles-of-repair__image-box flex">
               <div class="styles-of-repair__image-subbox subbox_left flex column">
-                <img class="styles-of-repair__image" src="img/section_6-image-example_1.png"
-                  alt="American classic">
+                <img class="styles-of-repair__image" src="img/section_6-image-example_1.png" alt="American classic">
                 <img class="styles-of-repair__image" src="img/section_6-image-example_2.png" alt="Empire">
               </div>
               <div class="styles-of-repair__image-subbox subbox_right flex column">
@@ -389,7 +406,8 @@
           <div class="section__container contacts-section__container flex column justify-center align-center">
             <form class="dark-form contacts-section__form flex column align-center">
               <fieldset class="submit-fields_dark contacts-section__submit-fields column">
-                <legend class="title section__fieldset-title contacts-section__fieldset-title">Have any questions?</legend>
+                <legend class="title section__fieldset-title contacts-section__fieldset-title">Have any questions?
+                </legend>
                 <label class="field__description field-description_dark-theme flex column">Name
                   <input class="main__input input_dark-theme" type="text" placeholder="What is your name:">
                 </label>
@@ -402,10 +420,12 @@
               </fieldset>
               <div class="checkbox__container">
                 <input class="checkbox-input" type="checkbox" id="contacts-section__checkbox">
-                <label for="contacts-section__checkbox" class="checkbox__text checkbox__text_dark">I agree to the processing of personal
+                <label for="contacts-section__checkbox" class="checkbox__text checkbox__text_dark">I agree to the
+                  processing of personal
                   data</label>
               </div>
-              <button class="btn contacts-section__btn"><span class="btn-text btn-text_with-additional-styles uppercase">Submit</span></button>
+              <button class="btn contacts-section__btn"><span
+                  class="btn-text btn-text_with-additional-styles uppercase">Submit</span></button>
             </form>
             <address class="company-address">Rostov-on-Don, Nansen St., 239 Shopping Center<br>
               Decorum Tel <a href="tel:+9287683229" class="company-tel">+7 (928) 768 32 29</a></address>
@@ -422,7 +442,7 @@
     </main>
 
 
-    <footer class="footer">
+    <footer class="footer back-black">
       <div class="header-footer__wrapper flex align-center uppercase">
         <div class="header-footer__company">
           <span class="header-footer__company-text beige">IC "Repair Design Project"</span>

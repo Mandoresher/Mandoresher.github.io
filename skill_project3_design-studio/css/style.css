@@ -7,15 +7,17 @@ body {
   scroll-behavior: smooth;
   color: white;
   overflow-x: hidden;
-  background-color: #131313;
+  background-color: white;
 }
 
 .wrapper {
   min-height: 100%;
+  max-width: 100%
 }
 
 .main {
   flex: 1 1 auto;
+  overflow-x: hidden;
 }
 
 .header>.header-footer__wrapper {
@@ -111,6 +113,8 @@ body {
   content: '';
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -210,6 +214,7 @@ body {
 
 .completed-projects__list {
   gap: 60.5px;
+  margin-bottom: 15px;
 }
 
 .completed-projects__list-img-box {
@@ -233,6 +238,8 @@ body {
 .completed-projects__image {
   max-width: 679px;
   max-height: 483px;
+  min-height: 255px;
+  width: calc(100% - 18px);
 }
 
 .main__slider {
@@ -243,7 +250,7 @@ body {
 
 .online-control {
   width: 100vw;
-  height: 770px;
+  max-height: 900px;
   background-color: white;
   margin: 0 auto;
 }
@@ -272,14 +279,13 @@ body {
 }
 
 .online-control__image {
-  width: 817px;
-  height: 434px;
+  width: 100%;
   filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
 }
 
 .online-control__icon-play-box {
-  width: 85px;
-  height: 85px;
+  width: 5.7vw;
+  height: 5.7vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -289,7 +295,9 @@ body {
 }
 
 .icon-play {
-  margin-left: 5px;
+  width: 25%;
+  height: 30%;
+  margin-left: 3px;
 }
 
 .online-control__line {
@@ -408,7 +416,6 @@ body {
 
 .types-of-repair {
   background-color: white;
-  min-height: 830px;
 }
 
 .icon-title_black {
@@ -723,6 +730,7 @@ body {
   padding: 24px 20px;
   gap: 18px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+  margin-bottom: 50px;
 }
 
 .client__name-photo {
@@ -753,9 +761,9 @@ body {
   width: 294px;
   height: 54px;
   background-color: #E3B873;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  top: 51px;
+  left: -20px;
   transform: translateY(50%);
   box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
 }
@@ -783,7 +791,6 @@ body {
 
 .contacts-section {
   position: relative;
-  min-height: 954px;
   background-image: url(../img/section_8-img.png);
   background-size: 100% 100%;
 }
@@ -799,7 +806,6 @@ body {
 .contacts-section__form {
   margin-top: -222px;
   width: 883px;
-  height: 445px;
   padding-top: 34px;
   gap: 35px;
 }
@@ -858,9 +864,8 @@ body {
 }
 
 .contacts-section__map {
-  margin-top: 43.29px;
-  height: 465px;
-  width: 925px;
+  margin: 43.29px auto;
+  max-width: 925px;
   filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
 }
 
@@ -890,4 +895,256 @@ body {
 
 .beige {
   color: #E3B873;
+}
+
+.back-black {
+  background-color: #131313;
+}
+
+@media (max-width: 1250px) {
+  .section {
+    padding: 0 18px;
+  }
+
+  .main__wrapper {
+    gap: 36px;
+  }
+
+  .completed-projects {
+    min-height: initial;
+  }
+
+  .completed-projects__subcontainer {
+    justify-content: center;
+    padding-left: 18px;
+  }
+
+  .completed-projects__list-img-box {
+    margin-bottom: 50px;
+    margin-top: 36px;
+    gap: 0;
+  }
+
+  .completed-projects__text-container {
+    justify-content: space-around;
+  }
+
+  .completed-projects__text-container {
+    margin-top: 36px;
+    gap: 36px;
+    padding: 0 16px;
+  }
+
+  .main__slider,
+  .subbox_left,
+  .subbox_right {
+    display: none;
+  }
+
+  .our-clients {
+    min-height: initial;
+  }
+
+  .our-clients::before,
+  .our-clients::after {
+    background-image: none;
+  }
+
+  .contacts-section__form {
+    margin-top: 50px;
+    width: 600px;
+  }
+
+  .online-control {
+    max-height: initial;
+  }
+
+  .online-control__container {
+    top: 0;
+  }
+
+  .icon-title {
+    color: #131313;
+  }
+
+  .checkbox__text {
+    white-space: nowrap;
+  }
+
+  .contacts-section__map {
+    min-height: 255px;
+    width: calc(100% - 36px);
+  }
+}
+
+@media (max-width: 1025px) {
+  .header-footer__nav {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .turnkey-repair {
+    max-height: 600px;
+  }
+
+  .turnkey-repair__container {
+    padding: 100px 75px;
+  }
+
+  .turnkey-repair__subcontainer {
+    gap: 16px;
+  }
+
+  .turnkey-repair__btn-container {
+    flex-direction: column;
+  }
+
+  .turnkey-repair__btn {
+    width: 100%;
+  }
+
+  .turnkey-repair__title {
+    font-size: 23px;
+    line-height: 132.83%;
+  }
+
+  .turnkey-repair__text {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 135.84%;
+  }
+
+  .completed-projects__text-subcontainer {
+    gap: 16px;
+  }
+
+  .completed-projects__title-text-container_h2 {
+    gap: 22px;
+    text-align: center;
+  }
+
+  .completed-projects__minor-text {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .completed-projects__title_h3 {
+    font-size: 14px;
+    line-height: 138.6%;
+  }
+
+  .completed-projects__list,
+  .call-the-measurer {
+    display: none;
+  }
+
+  .styles-of-repair__text-container {
+    padding: 50px 0;
+  }
+
+  .styles-of-repair__title {
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+
+  .completed-projects__title_h2 {
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+
+  .completed-projects__basic-text {
+    font-size: 11px;
+    line-height: 158.48%;
+  }
+
+  .online-control__text,
+  .our-clients__text {
+    font-size: 11px;
+    line-height: 169.8%;
+  }
+
+  .online-control__submit-fields {
+    flex-direction: column;
+  }
+
+  .online-control__btn,
+  .main__input {
+    width: 340px;
+  }
+
+  .our-clients__icon-title {
+    margin-top: 0;
+  }
+
+  .contacts-section__form {
+    width: 90%;
+  }
+
+  .contacts-section {
+    position: relative;
+    background-image: none;
+    background-color: #131313;
+    background-size: 100% 100%;
+  }
+
+  .contacts-section__submit-fields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-section::before {
+    background: none;
+  }
+
+  .contacts-section__form {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 376px) {
+  .header>.header-footer__wrapper {
+    height: 57px;
+  }
+
+  .footer>.header-footer__wrapper,
+  .header-footer__btn,
+  .styles-of-repair__list {
+    display: none;
+  }
+
+  .turnkey-repair {
+    max-height: 475px;
+  }
+
+  .turnkey-repair__btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .turnkey-repair__container {
+    padding: 100px 18px;
+  }
+
+  .styles-of-repair {
+    background-size: 340px 242px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .styles-of-repair::before {
+    background: none;
+  }
+
+  .styles-of-repair__text-container {
+    position: relative;
+    top: -124px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .styles-of-repair__title {
+    white-space: nowrap;
+  }
 }
