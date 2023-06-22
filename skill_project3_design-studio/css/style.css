@@ -239,7 +239,7 @@ body {
   max-width: 679px;
   max-height: 483px;
   min-height: 255px;
-  width: calc(100% - 18px);
+  width: calc(100%);
 }
 
 .main__slider {
@@ -273,13 +273,13 @@ body {
   content: '';
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
-  width: calc(100% - 18px);
-  height: 99%;
+  width: 100%;
+  height: 98%;
   z-index: 2;
 }
 
 .online-control__image {
-  width: calc(100% - 18px);
+  width: 100%;
   filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
 }
 
@@ -400,7 +400,7 @@ body {
   height: 18px;
   flex-shrink: 0;
   flex-grow: 0;
-  margin-right: 0.5em;
+  margin-right: 1em;
   background-color: #E3B873;
   border-radius: 1px;
 }
@@ -608,7 +608,8 @@ body {
   position: relative;
   max-height: 864px;
   background-image: url(../img/section_6-img.png);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .styles-of-repair::before {
@@ -792,12 +793,16 @@ body {
 .contacts-section {
   position: relative;
   background-image: url(../img/section_8-img.png);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contacts-section::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
@@ -916,8 +921,6 @@ body {
 
   .completed-projects__subcontainer {
     justify-content: center;
-    padding-left: 18px;
-    padding-right: 18px;
   }
 
   .completed-projects__list-img-box {
@@ -968,20 +971,21 @@ body {
     color: #131313;
   }
 
-  .checkbox__text {
-    white-space: nowrap;
-  }
-
   .contacts-section__map {
     min-height: 255px;
-    width: calc(100% - 36px);
+    width: 100%;
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1057px) {
   .header-footer__nav {
     display: none;
   }
+  .online-control__form,
+  .online-control__submit-fields {
+    min-width: 90%;
+  }
+  
 }
 
 @media (max-width: 769px) {
@@ -1036,7 +1040,8 @@ body {
   }
 
   .completed-projects__list,
-  .call-the-measurer {
+  .call-the-measurer,
+  .footer>.header-footer__wrapper {
     display: none;
   }
 
@@ -1067,11 +1072,21 @@ body {
 
   .online-control__submit-fields {
     flex-direction: column;
+    margin: 0 auto;
+    gap: 12px;
+  }
+
+  .section__fieldset-title {
+    margin-bottom: 20px;
   }
 
   .online-control__btn,
   .main__input {
-    width: 340px;
+    width: 100%;
+  }
+
+  .checkbox__text {
+    font-size: 12px;
   }
 
   .our-clients__icon-title {
@@ -1080,13 +1095,12 @@ body {
 
   .contacts-section__form {
     width: 90%;
+    margin-top: 20px;
   }
 
   .contacts-section {
     position: relative;
-    background-image: none;
     background-color: #131313;
-    background-size: 100% 100%;
   }
 
   .contacts-section__submit-fields {
@@ -1094,12 +1108,25 @@ body {
     flex-direction: column;
   }
 
-  .contacts-section::before {
-    background: none;
+  .submit-fields_dark,
+  .field-description_dark-theme,
+  .input_dark-theme {
+    max-width: 100%;
   }
 
-  .contacts-section__form {
-    margin-top: 20px;
+  .submit-fields_dark {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .contacts-section__btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 507px) {
+  .header-footer__btn {
+    display: none;
   }
 }
 
@@ -1107,9 +1134,7 @@ body {
   .header>.header-footer__wrapper {
     height: 57px;
   }
-
-  .footer>.header-footer__wrapper,
-  .header-footer__btn,
+  
   .styles-of-repair__list {
     display: none;
   }
