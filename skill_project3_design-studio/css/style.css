@@ -257,6 +257,7 @@ body {
 
 .online-control__container {
   position: relative;
+  max-width: 817px;
   gap: 35px;
   top: -324px;
 }
@@ -267,14 +268,17 @@ body {
 
 .online-control__image-box {
   position: relative;
+  max-height: 434px;
 }
 
 .online-control__image-box::before {
   content: '';
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 98%;
+  height: 100%;
   z-index: 2;
 }
 
@@ -292,6 +296,7 @@ body {
   position: absolute;
   background-color: #E3B873;
   z-index: 3;
+  cursor: pointer;
 }
 
 .icon-play {
