@@ -762,9 +762,9 @@ body {
   width: 294px;
   height: 54px;
   background-color: #E3B873;
-  position: relative;
-  top: 51px;
-  left: -20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   transform: translateY(50%);
   box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
 }
@@ -788,6 +788,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: white;
+  white-space: nowrap;
 }
 
 .contacts-section {
@@ -1130,6 +1131,8 @@ body {
   }
 }
 
+
+
 @media (max-width: 376px) {
   .header>.header-footer__wrapper {
     height: 57px;
@@ -1172,5 +1175,10 @@ body {
 
   .styles-of-repair__title {
     white-space: nowrap;
+  }
+
+  .client__size,
+  .client__time {
+    gap: 7px;
   }
 }
