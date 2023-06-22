@@ -573,6 +573,7 @@ body {
 }
 
 .input_dark-theme {
+  color: white;
   width: 100%;
   background-color: #131313;
   padding: 5px;
