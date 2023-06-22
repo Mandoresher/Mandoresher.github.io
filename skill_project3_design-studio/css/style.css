@@ -273,13 +273,13 @@ body {
   content: '';
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
+  width: calc(100% - 18px);
   height: 99%;
   z-index: 2;
 }
 
 .online-control__image {
-  width: 100%;
+  width: calc(100% - 18px);
   filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
 }
 
@@ -917,6 +917,7 @@ body {
   .completed-projects__subcontainer {
     justify-content: center;
     padding-left: 18px;
+    padding-right: 18px;
   }
 
   .completed-projects__list-img-box {
