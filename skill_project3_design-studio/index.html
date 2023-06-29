@@ -108,29 +108,37 @@
                     </div>
                   </div>
                   <div class="slider-container flex">
-                    <img src="img/slider-left.svg" alt="Слайд влево" class="slider__left">
-                    <div class="slider__bullet slider__bullet_active"></div>
-                    <div class="slider__bullet"></div>
-                    <div class="slider__bullet"></div>
-                    <img src="img/slider-right.svg" alt="Слайд вправо" class="slider__right">
+                    <button><img src="img/slider-left.svg" alt="Slide left" class="slider__left"></button>
+                    <button class="slider__bullet slider__bullet_active"></button>
+                    <button class="slider__bullet"></button>
+                    <button class="slider__bullet"></button>
+                    <button><img src="img/slider-right.svg" alt="Slide right" class="slider__right"></button>
                   </div>
                 </div>
                 <div class="completed-projects__list-img-box flex column">
                   <ul class="completed-projects__list flex">
                     <li class="completed-projects__item">
-                      <a href="#"
-                        class="completed-projects__link uppercase completed-projects__link_active">Rostov-on-Don,
-                        Admiral</a>
+                      <button
+                        class="completed-projects__slider-btn uppercase completed-projects__slider-btn_active">Rostov-on-Don,
+                        Admiral</button>
                     </li>
                     <li class="completed-projects__item">
-                      <a href="#" class="completed-projects__link uppercase">Sochi
-                        Thieves</a>
+                      <button class="completed-projects__slider-btn uppercase">Sochi, Vorovskogo</button>
                     </li>
                     <li class="completed-projects__item">
-                      <a href="#" class="completed-projects__link uppercase">Rostov-on-Don Patriotic</a>
+                      <button class="completed-projects__slider-btn uppercase">Rostov-on-Don, Patriotic</button>
                     </li>
                   </ul>
-                  <img class="completed-projects__image" src="img/section_2-img.png" alt="Rostov-on-don admiral">
+                  <div class="slider">
+                    <div class="slider__img-box">
+                      <img class="completed-projects__image completed-projects__image_active"
+                        src="img/completed-projects_slide_1.jpg" alt="Rostov-on-don admiral">
+                      <img class="completed-projects__image" src="img/completed-projects_slide_2.jpg"
+                        alt="Sochi thieves">
+                      <img class="completed-projects__image" src="img/completed-projects_slide_3.jpg"
+                        alt="Rostov-on-don patriotic">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -538,6 +546,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>

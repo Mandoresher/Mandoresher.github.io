@@ -222,7 +222,12 @@ body {
   margin-top: 107px;
 }
 
-.completed-projects__link {
+.slider {
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.completed-projects__slider-btn {
   font-family: 'Yeseva One', serif;
   font-size: 14px;
   line-height: 19px;
@@ -230,16 +235,24 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.completed-projects__link:hover {
+.completed-projects__slider-btn:hover {
   color: #E3B873;
   border-bottom: 1px solid #E3B873;
 }
 
-.completed-projects__image {
+.slider__img-box {
+  display: flex;
+  align-items: center;
   max-width: 679px;
   max-height: 483px;
   min-height: 255px;
-  width: calc(100%);
+  transition: all 1s;
+}
+
+/* Поправить пединг, чтобы не упиралось в край */
+.completed-projects__image {
+  /* display: block;
+  width: 100%; */
 }
 
 .slider-container {
@@ -270,7 +283,7 @@ body {
   cursor: pointer;
 }
 
-.completed-projects__link_active {
+.completed-projects__slider-btn_active {
   color: #E3B873;
   border-bottom: 1px solid #E3B873;
 }
@@ -1017,11 +1030,12 @@ body {
   .header-footer__nav {
     display: none;
   }
+
   .online-control__form,
   .online-control__submit-fields {
     min-width: 90%;
   }
-  
+
 }
 
 @media (max-width: 769px) {
@@ -1172,7 +1186,7 @@ body {
   .header>.header-footer__wrapper {
     height: 57px;
   }
-  
+
   .styles-of-repair__list {
     display: none;
   }
