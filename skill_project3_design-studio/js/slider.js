@@ -8,6 +8,9 @@ const cityText = document.querySelector('.completed-projects__city-text');
 const areaText = document.querySelector('.completed-projects__area-text');
 const timeText = document.querySelector('.completed-projects__time-text');
 
+const mobileLeft = document.querySelector('.slider__mobile-left');
+const mobileRight = document.querySelector('.slider__mobile-right');
+
 const section = document.querySelector('.completed-projects');
 
 city = ["Rostov-on-Don Admiral", "Sochi Vorovskogo", "Rostov-on-Don Patriotic"];
@@ -17,10 +20,13 @@ time = ["3.5 months", "4 months", "3 months"];
 let sliderCounter = 0;
 let sliderWidth;
 
-window.addEventListener('resize', showSlide);
+// window.addEventListener('resize', showSlide);
 
 sliderRight.addEventListener('click', nextSlide);
 sliderLeft.addEventListener('click', prevSlide);
+
+mobileRight.addEventListener('click', nextSlide);
+mobileLeft.addEventListener('click', prevSlide);
 
 sliderBox.addEventListener('mousedown', nextSlide);
 
@@ -38,8 +44,8 @@ document.addEventListener("keydown", function (e) {
 
 function showSlide() {
   sliderWidth = document.querySelector('.slider').offsetWidth;
-  sliderBox.style.width = sliderWidth * sliderImages.length + 'px';
-  sliderImages.forEach(item => item.style.width = sliderWidth + 'px');
+  // sliderBox.style.width = sliderWidth * sliderImages.length + 'px';
+  // sliderImages.forEach(item => item.style.width = sliderWidth + 'px');
 
   rollSlider();
 }

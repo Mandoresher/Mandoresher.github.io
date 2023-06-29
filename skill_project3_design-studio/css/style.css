@@ -223,7 +223,10 @@ body {
 }
 
 .slider {
-  max-width: 800px;
+  position: relative;
+  max-width: 679px;
+  max-height: 483px;
+  min-height: 255px;
   overflow: hidden;
 }
 
@@ -251,8 +254,11 @@ body {
 
 /* Поправить пединг, чтобы не упиралось в край */
 .completed-projects__image {
-  /* display: block;
-  width: 100%; */
+  display: block;
+  max-width: 679px;
+  max-height: 483px;
+  min-height: 255px;
+  width: 100%;
 }
 
 .slider-container {
@@ -957,7 +963,12 @@ body {
 
 @media (max-width: 1250px) {
   .section {
-    padding: 0 18px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .completed-projects {
+    padding: 0;
   }
 
   .main__wrapper {
@@ -992,6 +1003,34 @@ body {
   .subbox_left,
   .subbox_right {
     display: none;
+  }
+
+  .slider__mobile-left {
+    display: block;
+    content: '';
+    position: absolute;
+    background-image: url(../img/mobile-slider-icon-left.svg);
+    transform: translateY(-50%);
+    top: 50%;
+    left: 14px;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .slider__mobile-right {
+    display: block;
+    content: '';
+    position: absolute;
+    background-image: url(../img/mobile-slider-icon-right.svg);
+    transform: translateY(-50%);
+    top: 50%;
+    right: 14px;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer;
   }
 
   .our-clients {
