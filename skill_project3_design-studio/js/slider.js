@@ -10,7 +10,7 @@ const timeText = document.querySelector('.completed-projects__time-text');
 
 const section = document.querySelector('.completed-projects');
 
-city = ["Rostov-on-Don admiral", "Sochi Vorovskogo", "Rostov-on-Don patriotic"];
+city = ["Rostov-on-Don Admiral", "Sochi Vorovskogo", "Rostov-on-Don Patriotic"];
 area = ["81 m2", "105 m2", "93 m2"];
 time = ["3.5 months", "4 months", "3 months"];
 
