@@ -23,12 +23,24 @@
         </div>
         <nav class="header-footer__nav">
           <ul class="header-footer__list flex">
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Home</a></li>
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Projects</a></li>
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Measurement</a></li>
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Team</a></li>
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Reviews</a></li>
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Contacts</a></li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Home</a>
+            </li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Projects</a>
+            </li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Measurement</a>
+            </li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Team</a>
+            </li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Reviews</a>
+            </li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Contacts</a>
+            </li>
           </ul>
         </nav>
         <div class="header-footer__tel-btn flex align-center">
@@ -53,10 +65,12 @@
                   with work time saving up to 45 days and 20% from
                   cost of materials due to the organization of work</p>
                 <div class="turnkey-repair__btn-container flex">
-                  <button class="btn turnkey-repair__btn"><span class="btn-text uppercase">Calculate the
-                      cost</span></button>
-                  <button class="btn turnkey-repair__btn"><span class="btn-text uppercase">Submit your
-                      application</span></button>
+                  <button class="btn turnkey-repair__btn">
+                    <span class="btn-text uppercase">Calculate the cost</span>
+                  </button>
+                  <button class="btn turnkey-repair__btn">
+                    <span class="btn-text uppercase">Submit your application</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -93,16 +107,28 @@
                       <span class="main__text completed-projects__minor-text">Upon request</span>
                     </div>
                   </div>
-                  <img src="img/slider.svg" alt="" class="main__slider">
+                  <div class="slider-container flex">
+                    <img src="img/slider-left.svg" alt="Слайд влево" class="slider__left">
+                    <div class="slider__bullet slider__bullet_active"></div>
+                    <div class="slider__bullet"></div>
+                    <div class="slider__bullet"></div>
+                    <img src="img/slider-right.svg" alt="Слайд вправо" class="slider__right">
+                  </div>
                 </div>
                 <div class="completed-projects__list-img-box flex column">
                   <ul class="completed-projects__list flex">
-                    <li class="completed-projects__item"><a href="#"
-                        class="completed-projects__link uppercase">Rostov-on-Don, Admiral</a></li>
-                    <li class="completed-projects__item"><a href="#" class="completed-projects__link uppercase">Sochi
-                        Thieves</a></li>
-                    <li class="completed-projects__item"><a href="#"
-                        class="completed-projects__link uppercase">Rostov-on-Don Patriotic</a></li>
+                    <li class="completed-projects__item">
+                      <a href="#"
+                        class="completed-projects__link uppercase completed-projects__link_active">Rostov-on-Don,
+                        Admiral</a>
+                    </li>
+                    <li class="completed-projects__item">
+                      <a href="#" class="completed-projects__link uppercase">Sochi
+                        Thieves</a>
+                    </li>
+                    <li class="completed-projects__item">
+                      <a href="#" class="completed-projects__link uppercase">Rostov-on-Don Patriotic</a>
+                    </li>
                   </ul>
                   <img class="completed-projects__image" src="img/section_2-img.png" alt="Rostov-on-don admiral">
                 </div>
@@ -141,8 +167,9 @@
                 <label class="field__description flex column">Phone
                   <input class="main__input" type="tel" placeholder="Your phone number:">
                 </label>
-                <button class="btn online-control__btn"><span
-                    class="btn-text btn-text_with-additional-styles uppercase">Submit</span></button>
+                <button class="btn online-control__btn">
+                  <span class="btn-text btn-text_with-additional-styles uppercase">Submit</span>
+                </button>
               </fieldset>
               <div class="checkbox__container">
                 <input class="checkbox-input" type="checkbox" id="online-control__checkbox">
@@ -226,24 +253,31 @@
           <div class="section__container call-the-measurer__container flex">
             <div class="call-the-measurer__list-container flex column">
               <div class="call-the-measurer__list-item-container flex align-center">
-                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span
-                    class="list-icon-text">01</span></div><span class="call-the-measurer__text">Our specialist will
+                <div class="call-the-measurer__list-icon flex circle justify-center align-center">
+                  <span class="list-icon-text">01</span>
+                </div>
+                <span class="call-the-measurer__text">Our specialist will
                   arrive for measurements per day
                   contact, or appoint a date convenient for you</span>
               </div>
               <div class="call-the-measurer__list-item-container flex align-center">
-                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span
-                    class="list-icon-text">02</span></div><span class="call-the-measurer__text">Free metering</span>
+                <div class="call-the-measurer__list-icon flex circle justify-center align-center">
+                  <span class="list-icon-text">02</span>
+                </div>
+                <span class="call-the-measurer__text">Free metering</span>
               </div>
               <div class="call-the-measurer__list-item-container flex align-center">
-                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span
-                    class="list-icon-text">03</span></div><span class="call-the-measurer__text">Free consultation</span>
+                <div class="call-the-measurer__list-icon flex circle justify-center align-center">
+                  <span class="list-icon-text">03</span>
+                </div>
+                <span class="call-the-measurer__text">Free consultation</span>
               </div>
               <div class="call-the-measurer__list-item-container flex align-center">
-                <div class="call-the-measurer__list-icon flex circle justify-center align-center"><span
-                    class="list-icon-text">04</span></div><span class="call-the-measurer__text">Get a cost estimate
-                  and<br>
-                  the timing of your future repairs</span>
+                <div class="call-the-measurer__list-icon flex circle justify-center align-center">
+                  <span class="list-icon-text">04</span>
+                </div>
+                <span class="call-the-measurer__text">Get a cost estimate and<br> the timing of your future
+                  repairs</span>
               </div>
             </div>
             <form class="dark-form flex column">
@@ -266,17 +300,18 @@
                   processing of personal
                   data</label>
               </div>
-              <button class="btn call-the-measurer__btn"><span
-                  class="btn-text btn-text_with-additional-styles uppercase">Call the
-                  measurer</span></button>
+              <button class="btn call-the-measurer__btn">
+                <span class="btn-text btn-text_with-additional-styles uppercase">Call the
+                  measurer</span>
+              </button>
             </form>
           </div>
           <div class="call-the-measurer__list-item-container pig flex align-center">
             <div
               class="call-the-measurer__list-icon call-the-measurer__list-icon_pig flex circle justify-center align-center">
-              <img class="section5__icon-pig" src="img/section_5-pig-icon.svg" alt=""></div><span
-              class="call-the-measurer__text call-the-measurer__text_pig beige">Help save
-              10 - 20% of the<br>
+              <img class="section5__icon-pig" src="img/section_5-pig-icon.svg" alt="">
+            </div>
+            <span class="call-the-measurer__text call-the-measurer__text_pig beige">Help save 10 - 20% of the<br>
               cost of materials</span>
           </div>
         </section>
@@ -287,19 +322,39 @@
               <h2 class="title styles-of-repair__title beige">We realize your<br>
                 wildest fantasies</h2>
               <ul class="styles-of-repair__list flex column">
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">American classic</a></li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Empire</a></li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Classical</a></li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Loft</a></li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Minimalism</a></li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Provence</a></li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Romanticism</a></li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Scandinavian style</a>
+                <li class="styles-of-repair__item">
+                  <a href="#" class="styles-of-repair__link">American classic</a>
                 </li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Mediterranean style</a>
+                <li class="styles-of-repair__item">
+                  <a href="#" class="styles-of-repair__link">Empire</a>
                 </li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">High tech</a></li>
-                <li class="styles-of-repair__item"><a href="#" class="styles-of-repair__link">Eclecticism</a></li>
+                <li class="styles-of-repair__item">
+                  <a href="#" class="styles-of-repair__link">Classical</a>
+                </li>
+                <li class="styles-of-repair__item">
+                  <a href="#" class="styles-of-repair__link">Loft</a>
+                </li>
+                <li class="styles-of-repair__item">
+                  <a href="#" class="styles-of-repair__link">Minimalism</a>
+                </li>
+                <li class="styles-of-repair__item">
+                  <a href="#" class="styles-of-repair__link">Provence</a>
+                </li>
+                <li class="styles-of-repair__item">
+                  <a href="#" class="styles-of-repair__link">Romanticism</a>
+                </li>
+                <li class="styles-of-repair__item">
+                  <a href="#" class="styles-of-repair__link">Scandinavian style</a>
+                </li>
+                <li class="styles-of-repair__item">
+                  <a href="#" class="styles-of-repair__link">Mediterranean style</a>
+                </li>
+                <li class="styles-of-repair__item">
+                  <a href="#" class="styles-of-repair__link">High tech</a>
+                </li>
+                <li class="styles-of-repair__item">
+                  <a href="#" class="styles-of-repair__link">Eclecticism</a>
+                </li>
               </ul>
             </div>
             <div class="styles-of-repair__image-box flex">
@@ -424,18 +479,23 @@
                   processing of personal
                   data</label>
               </div>
-              <button class="btn contacts-section__btn"><span
-                  class="btn-text btn-text_with-additional-styles uppercase">Submit</span></button>
+              <button class="btn contacts-section__btn">
+                <span class="btn-text btn-text_with-additional-styles uppercase">Submit</span>
+              </button>
             </form>
             <address class="company-address">Rostov-on-Don, Nansen St., 239 Shopping Center<br>
-              Decorum Tel <a href="tel:+9287683229" class="company-tel">+7 (928) 768 32 29</a></address>
+              Decorum Tel
+              <a href="tel:+9287683229" class="company-tel">+7 (928) 768 32 29</a>
+            </address>
             <div class="contacts flex">
-              <a href="mailto:someemail@gmail.com" class="contact-email"><img class="contacts__icon"
-                  src="img/email-icon.svg" alt="email"></a>
-              <a href="https://www.instagram.com" class="contact-inst"><img class="contacts__icon"
-                  src="img/inst-icon.svg" alt="instagram"></a>
+              <a href="mailto:someemail@gmail.com" class="contact-email">
+                <img class="contacts__icon" src="img/email-icon.svg" alt="email">
+              </a>
+              <a href="https://www.instagram.com" class="contact-inst">
+                <img class="contacts__icon" src="img/inst-icon.svg" alt="instagram">
+              </a>
             </div>
-            <img src="img/section_8-map.png" alt="" class="contacts-section__map">
+            <img src="img/section_8-map.png" alt="Наше местоположение" class="contacts-section__map">
           </div>
         </section>
       </div>
@@ -449,12 +509,24 @@
         </div>
         <nav class="header-footer__nav">
           <ul class="header-footer__list flex">
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Home</a></li>
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Projects</a></li>
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Measurement</a></li>
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Team</a></li>
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Reviews</a></li>
-            <li class="header-footer__item"><a class="header-footer__link" href="#">Contacts</a></li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Home</a>
+            </li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Projects</a>
+            </li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Measurement</a>
+            </li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Team</a>
+            </li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Reviews</a>
+            </li>
+            <li class="header-footer__item">
+              <a class="header-footer__link" href="#">Contacts</a>
+            </li>
           </ul>
         </nav>
         <div class="header-footer__tel-btn flex align-center">
