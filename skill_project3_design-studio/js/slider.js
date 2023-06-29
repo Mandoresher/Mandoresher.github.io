@@ -74,7 +74,7 @@ function rollSlider() {
   // sliderBox.scrollTo(sliderCounter*sliderWidth, 0);
 }
 
-function activateSlide(index) {
+function activateSlide() {
   sliderBullets.forEach(item => item.classList.remove('slider__bullet_active'));
   sliderTextButtons.forEach(item => item.classList.remove('completed-projects__slider-btn_active'));
 
