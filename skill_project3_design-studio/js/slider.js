@@ -20,7 +20,7 @@ time = ["3.5 months", "4 months", "3 months"];
 let sliderCounter = 0;
 let sliderWidth;
 
-// window.addEventListener('resize', showSlide);
+window.addEventListener('resize', showSlide);
 
 sliderRight.addEventListener('click', nextSlide);
 sliderLeft.addEventListener('click', prevSlide);
@@ -44,10 +44,9 @@ document.addEventListener("keydown", function (e) {
 
 function showSlide() {
   sliderWidth = document.querySelector('.slider').offsetWidth;
-  // sliderBox.style.width = sliderWidth * sliderImages.length + 'px';
-  // sliderImages.forEach(item => item.style.width = sliderWidth + 'px');
 
   rollSlider();
+  activateSlide();
 }
 
 showSlide();
