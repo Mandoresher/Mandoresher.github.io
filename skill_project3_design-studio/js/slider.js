@@ -13,9 +13,9 @@ const mobileRight = document.querySelector('.slider__mobile-right');
 
 const section = document.querySelector('.completed-projects');
 
-city = ["Rostov-on-Don Admiral", "Sochi Vorovskogo", "Rostov-on-Don Patriotic"];
-area = ["81 m2", "105 m2", "93 m2"];
-time = ["3.5 months", "4 months", "3 months"];
+let city = ["Rostov-on-Don Admiral", "Sochi Vorovskogo", "Rostov-on-Don Patriotic"];
+let area = ["81 m2", "105 m2", "93 m2"];
+let time = ["3.5 months", "4 months", "3 months"];
 
 let sliderCounter = 0;
 let sliderWidth;
