@@ -28,7 +28,7 @@ sliderLeft.addEventListener('click', prevSlide);
 mobileRight.addEventListener('click', nextSlide);
 mobileLeft.addEventListener('click', prevSlide);
 
-sliderBox.addEventListener('mousedown', nextSlide);
+// sliderBox.addEventListener('mousedown', nextSlide);
 
 document.addEventListener("keydown", function (e) {
   if (e.key == "ArrowRight") {
@@ -97,4 +97,95 @@ sliderTextButtons.forEach((btn, index) => {
     activateSlide();
   })
 })
+
+sliderBox.addEventListener('pointerdown', (e) => {
+  console.log(e);
+})
+
+sliderBox.addEventListener('pointerup', (e) => {
+  console.log(e);
+})
+
+
+let isDragging = false;
+let startPos = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+let endPos = 0;
+
+let x1;
+let x2;
+let x3;
+let offset;
+
+
+
+sliderBox.addEventListener('pointerdown', startSwipe);
+sliderBox.addEventListener('pointermove', swipe);
+sliderBox.addEventListener('pointerup', endSwipe);
+sliderBox.addEventListener('pointerleave', endSwipe);
+sliderBox.addEventListener('pointercancel', endSwipe);
+
+function startSwipe(e) {
+  isDragging = true;
+  x1 = e.clientX;
+  console.log(x1);
+  console.log(sliderWidth);
+}
+
+function swipe(e) {
+  // if (isDragging) {
+  //   x2 = e.clientX;
+  //   console.log(x2);
+  // }
+}
+
+function endSwipe(e) {
+  isDragging = false;
+  x3 = e.clientX;
+  console.log(x3);
+  console.log(sliderWidth);
+  offset = x3 - x1;
+  console.log(offset);
+  if (offset > 0 && Math.abs(offset) > (sliderWidth / 16)) {
+    prevSlide();
+  } else if (offset < 0 && Math.abs(offset) > (sliderWidth / 16)) {
+    nextSlide();
+  }
+}
+
+
+
+// function startSwipe(event) {
+//   event.preventDefault();
+//   startPos = getPositionX(event);
+//   isDragging = true;
+// }
+
+// function swipe(event) {
+//   if (!isDragging) return;
+
+//   const currentPosition = getPositionX(event);
+//   currentTranslate = endPos - startPos;
+// }
+
+// function endSwipe(event) {
+//   isDragging = false;
+
+//   endPos = getPositionX(event);
+
+//   const sliderWidth = sliderImages[0].clientWidth;
+//   const threshold = sliderWidth / 4;
+
+//   if (currentTranslate > threshold) {
+//     prevSlide();
+//   } else if (currentTranslate < -threshold) {
+//     nextSlide();
+//   }
+// }
+
+// function getPositionX(event) {
+//   return event.width;
+// }
+
 
