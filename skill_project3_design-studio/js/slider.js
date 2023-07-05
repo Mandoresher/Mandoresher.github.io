@@ -130,7 +130,7 @@ function startSwipe(e) {
   isDragging = true;
   x1 = e.clientX;
   console.log(x1);
-  console.log(sliderWidth);
+  console.log(sliderWidth / 4);
 }
 
 function swipe(e) {
@@ -144,12 +144,12 @@ function endSwipe(e) {
   isDragging = false;
   x3 = e.clientX;
   console.log(x3);
-  console.log(sliderWidth);
+  console.log(sliderWidth / 4);
   offset = x3 - x1;
   console.log(offset);
-  if (offset > 0 && Math.abs(offset) > (sliderWidth / 16)) {
+  if (offset > 0 && Math.abs(offset) > (sliderWidth / 4)) {
     prevSlide();
-  } else if (offset < 0 && Math.abs(offset) > (sliderWidth / 16)) {
+  } else if (offset < 0 && Math.abs(offset) > (sliderWidth / 4)) {
     nextSlide();
   }
 }
