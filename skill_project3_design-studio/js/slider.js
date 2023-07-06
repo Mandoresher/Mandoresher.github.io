@@ -108,8 +108,8 @@ let offset;
 sliderBox.addEventListener('pointerdown', startSwipe);
 // sliderBox.addEventListener('pointermove', swipe);
 sliderBox.addEventListener('pointerup', endSwipe);
-sliderBox.addEventListener('pointerleave', endSwipe);
-sliderBox.addEventListener('pointercancel', endSwipe);
+// sliderBox.addEventListener('pointerleave', endSwipe);
+// sliderBox.addEventListener('pointercancel', endSwipe);
 
 function startSwipe(e) {
   isDragging = true;
