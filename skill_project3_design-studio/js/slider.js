@@ -121,9 +121,9 @@ function endSwipe(e) {
   x3 = e.clientX;
   offset = x3 - x1;
   if (offset > 0 && Math.abs(offset) > (sliderWidth / 4)) {
-    nextSlide();
-  } else if (offset < 0 && Math.abs(offset) > (sliderWidth / 4)) {
     prevSlide();
+  } else if (offset < 0 && Math.abs(offset) > (sliderWidth / 4)) {
+    nextSlide();
   }
 }
 
