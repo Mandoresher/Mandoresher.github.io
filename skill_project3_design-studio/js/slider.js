@@ -25,8 +25,11 @@ window.addEventListener('resize', showSlide);
 sliderRight.addEventListener('click', nextSlide);
 sliderLeft.addEventListener('click', prevSlide);
 
-mobileRight.addEventListener('click', nextSlide);
-mobileLeft.addEventListener('click', prevSlide);
+// mobileRight.addEventListener('click', nextSlide);
+// mobileLeft.addEventListener('click', prevSlide);
+
+mobileRight.addEventListener('touchend', nextSlide);
+mobileLeft.addEventListener('touchend', prevSlide);
 
 // sliderBox.addEventListener('mousedown', nextSlide);
 
