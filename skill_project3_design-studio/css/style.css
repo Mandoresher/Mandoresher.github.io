@@ -249,9 +249,9 @@ body {
   max-width: 679px;
   max-height: 483px;
   min-height: 255px;
-  /* transition: all 1s; */
+  transition: all 1s;
   touch-action: pan-y;
-  /* -webkit-transition: all 1s; */
+  -webkit-transition: all 1s;
 }
 
 .completed-projects__image {

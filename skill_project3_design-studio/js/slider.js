@@ -31,6 +31,7 @@ showSlide();
 
 function rollSlider() {
   sliderBox.style.transform = `translateX(${-sliderCounter * sliderWidth}px)`;
+  sliderBox.style.webkitTransform = `translateX(${-sliderCounter * sliderWidth}px)`;
 
   cityText.textContent = `${city[sliderCounter]}`;
   areaText.textContent = `${area[sliderCounter]}`;
