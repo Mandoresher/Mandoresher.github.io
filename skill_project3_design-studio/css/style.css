@@ -253,9 +253,6 @@ body {
   touch-action: none;
 }
 
-/* Поправить пединг, чтобы не упиралось в край 
-(это из-а скрола, хз как поправить, но на мобиле норм */
-
 .completed-projects__image {
   display: block;
   max-width: 679px;

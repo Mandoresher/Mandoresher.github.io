@@ -98,15 +98,12 @@ sliderTextButtons.forEach((btn, index) => {
   })
 })
 
-
 let isDragging = false;
 
 let x1;
 let x2;
 let x3;
 let offset;
-
-
 
 sliderBox.addEventListener('pointerdown', startSwipe);
 // sliderBox.addEventListener('pointermove', swipe);
@@ -129,8 +126,6 @@ function endSwipe(e) {
     prevSlide();
   }
 }
-
-
 
 // function startSwipe(event) {
 //   event.preventDefault();
