@@ -20,31 +20,6 @@ let time = ["3.5 months", "4 months", "3 months"];
 let sliderCounter = 0;
 let sliderWidth;
 
-window.addEventListener('resize', showSlide);
-
-sliderRight.addEventListener('click', nextSlide);
-sliderLeft.addEventListener('click', prevSlide);
-
-// mobileRight.addEventListener('click', nextSlide);
-// mobileLeft.addEventListener('click', prevSlide);
-
-mobileRight.addEventListener('touchend', nextSlide);
-mobileLeft.addEventListener('touchend', prevSlide);
-
-// sliderBox.addEventListener('mousedown', nextSlide);
-
-document.addEventListener("keydown", function (e) {
-  if (e.key == "ArrowRight") {
-    nextSlide();
-  }
-});
-
-document.addEventListener("keydown", function (e) {
-  if (e.key == "ArrowLeft") {
-    prevSlide();
-  }
-});
-
 function showSlide() {
   sliderWidth = document.querySelector('.slider').offsetWidth;
 
@@ -53,20 +28,6 @@ function showSlide() {
 }
 
 showSlide();
-
-function nextSlide() {
-  sliderCounter++;
-  if (sliderCounter >= sliderImages.length) sliderCounter = 0;
-  rollSlider();
-  activateSlide();
-}
-
-function prevSlide() {
-  sliderCounter--;
-  if (sliderCounter < 0) sliderCounter = sliderImages.length - 1;
-  rollSlider();
-  activateSlide();
-}
 
 function rollSlider() {
   sliderBox.style.transform = `translateX(${-sliderCounter * sliderWidth}px)`;
@@ -85,6 +46,20 @@ function activateSlide() {
   sliderTextButtons[sliderCounter].classList.add('completed-projects__slider-btn_active');
 }
 
+function nextSlide() {
+  sliderCounter++;
+  if (sliderCounter >= sliderImages.length) sliderCounter = 0;
+  rollSlider();
+  activateSlide();
+}
+
+function prevSlide() {
+  sliderCounter--;
+  if (sliderCounter < 0) sliderCounter = sliderImages.length - 1;
+  rollSlider();
+  activateSlide();
+}
+
 sliderBullets.forEach((bullet, index) => {
   bullet.addEventListener('click', () => {
     sliderCounter = index;
@@ -101,18 +76,37 @@ sliderTextButtons.forEach((btn, index) => {
   })
 })
 
+window.addEventListener('resize', showSlide);
+
+sliderRight.addEventListener('click', nextSlide);
+sliderLeft.addEventListener('click', prevSlide);
+
+// mobileRight.addEventListener('click', nextSlide);
+// mobileLeft.addEventListener('click', prevSlide);
+
+mobileRight.addEventListener('touchend', nextSlide);
+mobileLeft.addEventListener('touchend', prevSlide);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key == "ArrowRight") {
+    nextSlide();
+  }
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key == "ArrowLeft") {
+    prevSlide();
+  }
+});
+
+// sliderBox.addEventListener('mousedown', nextSlide);
+
 let isDragging = false;
 
 let x1;
 let x2;
 let x3;
 let offset;
-
-sliderBox.addEventListener('pointerdown', startSwipe);
-// sliderBox.addEventListener('pointermove', swipe);
-sliderBox.addEventListener('pointerup', endSwipe);
-// sliderBox.addEventListener('pointerleave', endSwipe);
-// sliderBox.addEventListener('pointercancel', endSwipe);
 
 function startSwipe(e) {
   isDragging = true;
@@ -129,6 +123,12 @@ function endSwipe(e) {
     nextSlide();
   }
 }
+
+sliderBox.addEventListener('pointerdown', startSwipe);
+// sliderBox.addEventListener('pointermove', swipe);
+sliderBox.addEventListener('pointerup', endSwipe);
+// sliderBox.addEventListener('pointerleave', endSwipe);
+// sliderBox.addEventListener('pointercancel', endSwipe);
 
 // function startSwipe(event) {
 //   event.preventDefault();
