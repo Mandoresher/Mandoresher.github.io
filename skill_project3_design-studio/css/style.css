@@ -228,7 +228,6 @@ body {
   max-height: 483px;
   min-height: 255px;
   overflow: hidden;
-  touch-action: none
 }
 
 .completed-projects__slider-btn {
@@ -251,7 +250,7 @@ body {
   max-height: 483px;
   min-height: 255px;
   transition: all 1s;
-  touch-action: none
+  touch-action: none;
 }
 
 /* Поправить пединг, чтобы не упиралось в край 
