@@ -250,7 +250,7 @@ body {
   max-height: 483px;
   min-height: 255px;
   transition: all 1s;
-  touch-action: none;
+  touch-action: pan-y;
 }
 
 .completed-projects__image {
