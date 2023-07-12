@@ -50,6 +50,10 @@ body {
     cursor: pointer;
 }
 
+.btn:hover {
+    background: linear-gradient(135deg, #c97319 0%, #c59c2a 100%);
+}
+
 .btn:active {
     background: linear-gradient(135deg, #AC6115 0%, #9E7A19 100%);
 }
