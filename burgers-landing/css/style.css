@@ -43,11 +43,14 @@ body {
 }
 
 .btn {
+    position: relative;
+    width: 260px;
+    height: 62px;
     border-radius: 8px;
     background: linear-gradient(135deg, #DA8023 0%, #E2B438 100%);
-    box-sizing: border-box;
     border: 0;
     cursor: pointer;
+    z-index: 2;
 }
 
 .btn:hover {
@@ -139,11 +142,6 @@ body {
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 56px;
-}
-
-.main__btn {
-    width: 260px;
-    height: 62px;
 }
 
 .btn-text {
