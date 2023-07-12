@@ -82,9 +82,6 @@ window.addEventListener('resize', showSlide);
 sliderRight.addEventListener('click', nextSlide);
 sliderLeft.addEventListener('click', prevSlide);
 
-// mobileRight.addEventListener('click', nextSlide);
-// mobileLeft.addEventListener('click', prevSlide);
-
 mobileRight.addEventListener('touchend', nextSlide);
 mobileLeft.addEventListener('touchend', prevSlide);
 
@@ -99,8 +96,6 @@ document.addEventListener("keydown", function (e) {
     prevSlide();
   }
 });
-
-// sliderBox.addEventListener('mousedown', nextSlide);
 
 let isDragging = false;
 
@@ -126,41 +121,6 @@ function endSwipe(e) {
 }
 
 sliderBox.addEventListener('pointerdown', startSwipe);
-// sliderBox.addEventListener('pointermove', swipe);
 sliderBox.addEventListener('pointerup', endSwipe);
-// sliderBox.addEventListener('pointerleave', endSwipe);
-// sliderBox.addEventListener('pointercancel', endSwipe);
-
-// function startSwipe(event) {
-//   event.preventDefault();
-//   startPos = getPositionX(event);
-//   isDragging = true;
-// }
-
-// function swipe(event) {
-//   if (!isDragging) return;
-
-//   const currentPosition = getPositionX(event);
-//   currentTranslate = endPos - startPos;
-// }
-
-// function endSwipe(event) {
-//   isDragging = false;
-
-//   endPos = getPositionX(event);
-
-//   const sliderWidth = sliderImages[0].clientWidth;
-//   const threshold = sliderWidth / 4;
-
-//   if (currentTranslate > threshold) {
-//     prevSlide();
-//   } else if (currentTranslate < -threshold) {
-//     nextSlide();
-//   }
-// }
-
-// function getPositionX(event) {
-//   return event.width;
-// }
 
 

@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/Merriweather-Black.ttf");
+}
+
+html {
+    background-color: #191411;
+}
+
+body {
+    background-image: url("../img/main_bg.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    font-family: Gilroy, sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    border-radius: 8px;
+    background: linear-gradient(135deg, #DA8023 0%, #E2B438 100%);
+    box-sizing: border-box;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn:active {
+    background: linear-gradient(135deg, #AC6115 0%, #9E7A19 100%);
+}
+
+.header {
+    padding: 40px 0;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu {
+
+}
+
+.header__menu-list {
+    display: flex;
+    gap: 88px;
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 22px;
+    white-space: nowrap;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+
+.header__logo {
+    vertical-align: bottom;
+}
+
+.header__currency {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    line-height: 32px;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+.main {
+    padding-top: 103px;
+    padding-bottom: 199px;
+}
+
+.main__container {
+    position: relative;
+}
+
+.main__info {
+    max-width: 608px;
+}
+
+.main__small-info {
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 100px;
+    background-color: #D3320F;
+}
+
+.main__title {
+    text-transform: uppercase;
+    font-family: Merriweather, sans-serif;
+    font-size: 120px;
+    line-height: 130%;
+    letter-spacing: 4px;
+    margin-bottom: 56px;
+}
+
+.main__text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 56px;
+}
+
+.main__btn {
+    width: 260px;
+    height: 62px;
+}
+
+.btn-text {
+    color: #191411;
+    text-align: center;
+    font-family: Gilroy, sans-serif;
+    font-size: 18px;
+
+}
+
+.main__image {
+    position: absolute;
+    left: calc(100% - 991px);
+    top: -123px;
+}
