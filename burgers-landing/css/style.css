@@ -157,3 +157,233 @@ body {
     left: calc(100% - 991px);
     top: -123px;
 }
+
+.why {
+    background-image: url("../img/whybg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 180px;
+}
+
+.why__reasons-block {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.why__reason {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 320px;
+    gap: 24px;
+}
+
+.why__title {
+    margin-top: 200px;
+    margin-bottom: 60px;
+}
+
+.title {
+    text-align: center;
+    font-family: Merriweather, sans-serif;
+    font-size: 64px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 24px;
+}
+
+.subtext {
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.choose__title {
+    margin-bottom: 60px;
+}
+
+.burgers-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.burgers-container::before {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 870px;
+    background-color: #42260B;
+    background-position: center;
+    filter: blur(150px);
+    z-index: -1;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 384px;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #353535;
+    background: #211A16;
+}
+
+.info-button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 62px;
+}
+
+.price-size-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger__price {
+    font-size: 32px;
+}
+
+.burger__size {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.burger__btn {
+    display: flex;
+    width: 182px;
+    padding: 19px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.order {
+    background-image: url("../img/order_bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.order__container {
+    position: relative;
+}
+
+.order__title {
+    margin-top: 180px;
+    margin-bottom: 60px;
+}
+
+.order__inner-container {
+    display: flex;
+    justify-content: center;
+}
+
+.order__image {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 764px);
+    z-index: -1;
+}
+
+.order__form {
+    max-width: 424px;
+    border-radius: 16px;
+    border: 1px solid #353535;
+    background: #211A16;
+    padding: 60px 40px;
+    margin-left: 674px;
+}
+
+.order__legend {
+    max-width: 344px;
+    text-align: center;
+    font-family: Gilroy, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.order__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+
+.order__input, .order__btn {
+    width: 100%;
+}
+
+.order__label {
+    width: 344px;
+    height: 62px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    background-image: linear-gradient(135deg, #DA8023 0%, #E2B438 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order__input {
+    caret-color: #FFFFFF;
+    width: 342px;
+    height: 60px;
+    padding: 16px 10px;
+    background: #211A16;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    color: #FFFFFF;
+    font-family: Gilroy, sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+::placeholder {
+    color: #757575;
+    font-family: Gilroy, sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.order__input:focus {
+    border: none;
+}
+
+.order__input:focus::placeholder {
+    color: transparent;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+}
+
+.footer__text {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+
+
