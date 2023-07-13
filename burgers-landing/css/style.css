@@ -163,7 +163,6 @@ body {
     text-align: center;
     font-family: Gilroy, sans-serif;
     font-size: 18px;
-
 }
 
 .main__image {
@@ -470,6 +469,9 @@ body {
     .title {
         font-size: 32px;
     }
+    .main__small-info {
+        margin-bottom: 30px;
+    }
     .burger {
         text-align: center;
     }
@@ -521,8 +523,26 @@ body {
     .title {
         font-size: 26px;
     }
+    .main__btn {
+        max-width: 70%;
+    }
+    .info-button-container {
+        gap: 10px;
+    }
+    .btn-text {
+        font-size: 12px;
+    }
+    .price-size-container {
+        justify-content: center;
+    }
     .header__menu-list {
         flex-direction: column;
+    }
+    .order__input {
+        font-size: 12px;
+    }
+    .order__input::placeholder {
+        font-size: 12px;
     }
 }
 
