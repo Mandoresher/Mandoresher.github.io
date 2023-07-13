@@ -83,10 +83,6 @@ body {
     justify-content: space-between;
 }
 
-.header__menu {
-
-}
-
 .header__menu-list {
     display: flex;
     gap: 88px;
@@ -251,6 +247,12 @@ body {
     border-radius: 16px;
     border: 1px solid #353535;
     background: #211A16;
+    transition: all 0.3s ease-in-out;
+}
+
+.burger:hover {
+    transform: scale(1.05);
+    background: #31241f;
 }
 
 .info-button-container {
@@ -355,6 +357,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .order__input {
@@ -370,6 +373,10 @@ body {
     font-family: Gilroy, sans-serif;
     font-size: 16px;
     line-height: 140%;
+}
+
+.order__label:hover {
+    transform: scale(1.05);
 }
 
 ::placeholder {
