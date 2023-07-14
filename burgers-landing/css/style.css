@@ -26,6 +26,7 @@ a, a:visited, a:active {
 html {
     background-color: #191411;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -81,6 +82,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 35px;
 }
 
 .header__menu-list {
@@ -92,6 +94,7 @@ body {
     font-size: 18px;
     line-height: 22px;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .header__link:hover {
@@ -115,6 +118,11 @@ body {
     user-select: none;
     background-color: transparent;
     color: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__currency:hover {
+    transform: scale(1.2);
 }
 
 .main {
@@ -247,6 +255,7 @@ body {
     border-radius: 16px;
     border: 1px solid #353535;
     background: #211A16;
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
@@ -442,15 +451,15 @@ body {
         justify-content: center;
     }
     .header__logo {
-        transform: scale(0.5);
-        margin-right: -30px;
+        /*transform: scale(0.5);*/
+        /*margin-right: -30px;*/
+    }
+    .header__menu-list {
+        flex-direction: column;
     }
     .header__currency {
-        transform: scale(0.5);
+        /*transform: scale(0.5);*/
         min-width: 50px;
-    }
-    .header__link {
-        font-size: 10px;
     }
     .main__text {
         font-size: 18px;
@@ -530,6 +539,9 @@ body {
     .title {
         font-size: 26px;
     }
+    .header__link {
+        font-size: 14px;
+    }
     .main__btn {
         max-width: 70%;
     }
@@ -541,9 +553,6 @@ body {
     }
     .price-size-container {
         justify-content: center;
-    }
-    .header__menu-list {
-        flex-direction: column;
     }
     .order__input {
         font-size: 12px;
